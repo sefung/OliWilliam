@@ -52,13 +52,14 @@ font-family: "Bebas Neue", sans-serif; */
   font-size: 30px;
 }
 .navbar .nav-item a {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .navbar .nav-item a:hover {
-  color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
   transition: 0.8s;
 }
 

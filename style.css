@@ -20,6 +20,9 @@ font-family: "Bebas Neue", sans-serif; */
   z-index: 10;
 }
 .navbar {
+
+
+
   align-items: center;
   justify-content: space-between;
   opacity: 5px;
@@ -49,11 +52,11 @@ font-family: "Bebas Neue", sans-serif; */
 
 .navbar .navbar-brand {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 25px;
 }
 .navbar .nav-item a {
   color: rgb(0, 0, 0);
-  font-size: 17px;
+  font-size: 15px;
 
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -82,4 +85,7 @@ font-family: "Bebas Neue", sans-serif; */
 .navbar  .Oil {
   color: rgb(230, 195, 0);
   text-shadow: 10px;
+}
+html {
+  background-color: rgba(151, 151, 151, 0.425);
 }

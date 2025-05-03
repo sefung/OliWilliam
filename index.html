@@ -25,7 +25,7 @@
 </head>
 <body style="background-color: rgba(236, 234, 234, 0.295);">
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top ">
   <div class="container">
     <a class="navbar-brand" href="#"><span class="HW">HW.</span><span class="Oil">OilTech</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,25 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#Home">Home</a>
+          <a class="nav-link" href="#" id="homeLink">Home</a>
+<script>
+document.getElementById('homeLink').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Product.html">Product</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Produk
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           
+            <li><a class="dropdown-item" href="Oli Motor.html">Oli Motor</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Oli Mobil</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Service">Service</a>
@@ -52,25 +67,18 @@
 </nav>
 <!-- caurosel -->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner mx-auto" style="max-width: 100%; top: 0px;">
     <div class="carousel-item active" data-bs-interval="3000">
-      <img src="banner1.jpg" class="d-block w-100" alt="...">
+      <img src="banner index 1.jpg" class="d-block w-100 "  alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="3000">
-      <img src="banner2.jpg" class="d-block w-100" alt="...">
+      <img src="banner-index-2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-bs-interval="3000">
-      <img src="banner3.jpg" class="d-block w-100" alt="...">
+      <img src="banner index 3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
 </div>
 <!-- caurosel -->
 <div class="container-fluid banner">
@@ -83,29 +91,41 @@
 </div>
 </div>
 
-<div class="container-fluid Produk scroll pt-3">
-  <div class="container text-center">
-    <h3 class="display-6"><p class="">Fungsi Oli</p></h3>
-    <p>Oli mesin adalah komponen vital dalam setiap kendaraan, termasuk Mazda. Cairan kental ini berperan sebagai darah yang mengalir dalam mesin, melumasi, mendinginkan, dan melindungi komponen internal dari keausan. Mazda Genuine Oil yang direkomendasikan, seperti SN 0W dan 5W-30, dirancang khusus untuk memberikan performa optimal pada kendaraan Mazda.
-
+<div class="container-fluid fungsi-oli">
+  <div class="container text-center " style="padding: 10px;">
+    <h3 id="">Fungsi Oli</h3>
+    <p style="text-align: justify">Oli mesin adalah komponen vital dalam setiap kendaraan, termasuk Mazda. Cairan kental ini berperan sebagai darah yang mengalir dalam mesin, melumasi, mendinginkan, dan melindungi komponen internal dari keausan. Mazda Genuine Oil yang direkomendasikan, seperti SN 0W dan 5W-30, dirancang khusus untuk memberikan performa optimal pada kendaraan Mazda.
       Mengapa Oli Mesin Mazda Sangat Penting?
-      
       Oli mesin Mazda diformulasikan dengan aditif khusus yang menjamin pelumasan maksimal pada setiap komponen bergerak, mengurangi gesekan, dan meminimalisir keausan.
       Oli membantu menyerap panas yang dihasilkan oleh proses pembakaran, menjaga suhu mesin tetap stabil dan mencegah overheating.
       Oli mesin Mazda mengandung zat aditif yang melindungi komponen mesin dari karat, korosi, dan endapan yang dapat merusak kinerja mesin.
       Dengan pelumasan yang optimal, mesin dapat bekerja lebih efisien, sehingga konsumsi bahan bakar Anda pun menjadi lebih hemat.
       Pilihan Oli Mesin Mazda yang Tepat
-      
       Mazda Genuine Oil SN 0W: Cocok untuk berbagai kondisi cuaca, terutama di daerah dengan suhu ekstrem. Oli ini memberikan perlindungan ekstra pada mesin saat start dingin dan menjaga viskositas yang stabil pada suhu tinggi.
       Mazda Genuine Oil SN 5W-30: Merupakan oli serbaguna yang cocok untuk berbagai jenis kendaraan Mazda. Oli ini memberikan keseimbangan antara perlindungan dan performa.
 </p>
 
 
-</div>
-</div>
+<div class="container text-center " style="padding: 10px;">
+  <h3 id="">Keungulan Oli HerWil</h3>
+  <p style="text-align: justify">Oli mesin dan oli gardan motor memiliki kekentalan yang berbeda karena tugas dan fungsi yang berbeda pula. Oli mesin digunakan untuk melumasi dan melindungi komponen-komponen dalam mesin kendaraan, seperti piston, silinder, dan poros engkol. Oli mesin harus mampu mengalir dengan baik dalam suhu kerja mesin yang tinggi.
+    Oleh karena itu, oli mesin memiliki tingkat kekentalan yang lebih rendah atau lebih cair dibandingkan dengan oli gardan motor. Kekentalan rendah pada oli mesin memungkinkan oli dapat mengalir dengan lancar ke seluruh bagian mesin dan memberikan pelumasan yang optimal.   
+    Di sisi lain, oli gardan motor digunakan untuk melumasi dan melindungi gigi-gigi pada gardan atau diferensial. Fungsi oli gardan motor adalah untuk mengurangi gesekan antara gigi-gigi yang berputar dengan kecepatan tinggi.  
+    Oleh karena itu, oli gardan motor harus memiliki tingkat kekentalan yang lebih tinggi atau lebih kental dibandingkan dengan oli mesin. Kekentalan yang tinggi pada oli gardan motor membantu dalam membentuk lapisan pelindung yang lebih tebal pada gigi-gigi gardan, sehingga mengurangi gesekan dan keausan yang berpotensi terjadi.
+</p>
+<!-- <div class="container-fluid keungulan">
+  <div class="container text-center " style="padding: 10px;">
+    <h3 id="">Keungulan Oli HerWil</h3>
+    <p style="text-align: justify; " >Oli mesin dan oli gardan motor memiliki kekentalan yang berbeda karena tugas dan fungsi yang berbeda pula. Oli mesin digunakan untuk melumasi dan melindungi komponen-komponen dalam mesin kendaraan, seperti piston, silinder, dan poros engkol. Oli mesin harus mampu mengalir dengan baik dalam suhu kerja mesin yang tinggi.
+      Oleh karena itu, oli mesin memiliki tingkat kekentalan yang lebih rendah atau lebih cair dibandingkan dengan oli gardan motor. Kekentalan rendah pada oli mesin memungkinkan oli dapat mengalir dengan lancar ke seluruh bagian mesin dan memberikan pelumasan yang optimal.   
+      Di sisi lain, oli gardan motor digunakan untuk melumasi dan melindungi gigi-gigi pada gardan atau diferensial. Fungsi oli gardan motor adalah untuk mengurangi gesekan antara gigi-gigi yang berputar dengan kecepatan tinggi.  
+      Oleh karena itu, oli gardan motor harus memiliki tingkat kekentalan yang lebih tinggi atau lebih kental dibandingkan dengan oli mesin. Kekentalan yang tinggi pada oli gardan motor membantu dalam membentuk lapisan pelindung yang lebih tebal pada gigi-gigi gardan, sehingga mengurangi gesekan dan keausan yang berpotensi terjadi.</p>
+</div> -->
+<!-- </div> -->
 <!-- card -->
+ <h2 class="text-center">Produk</h2>
 <div class="row pt-4 text-center ms-3 me-3"> <!-- g-4 untuk gap/gutter 1.5rem -->
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card h-100"> <!-- h-100 untuk tinggi seragam -->
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
@@ -114,7 +134,7 @@
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card ">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
@@ -123,7 +143,7 @@
     </div>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-3">
     <div class="card h-100">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
@@ -131,6 +151,16 @@
       </div>
     </div>
   </div>
+
+  <div class="col-md-3">
+    <div class="card ">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <img src="oli kecil 4.jpg" class="card-img-top img-fluid" alt="...">      
+      </div>
+    </div>
+  </div>
+  
 </div>
 </div>
 
@@ -144,48 +174,46 @@
 
 
       <!-- gambar samping -->
-<div class="container-fluid keungulan">
-  <div class="container text-center " style="padding: 10px;">
-    <h3 id="">Keungulan Oli HerWil</h3>
-    <p style="text-align: justify;" >Oli mesin dan oli gardan motor memiliki kekentalan yang berbeda karena tugas dan fungsi yang berbeda pula. Oli mesin digunakan untuk melumasi dan melindungi komponen-komponen dalam mesin kendaraan, seperti piston, silinder, dan poros engkol. Oli mesin harus mampu mengalir dengan baik dalam suhu kerja mesin yang tinggi.
 
-      Oleh karena itu, oli mesin memiliki tingkat kekentalan yang lebih rendah atau lebih cair dibandingkan dengan oli gardan motor. Kekentalan rendah pada oli mesin memungkinkan oli dapat mengalir dengan lancar ke seluruh bagian mesin dan memberikan pelumasan yang optimal.
-      
-      Di sisi lain, oli gardan motor digunakan untuk melumasi dan melindungi gigi-gigi pada gardan atau diferensial. Fungsi oli gardan motor adalah untuk mengurangi gesekan antara gigi-gigi yang berputar dengan kecepatan tinggi.
-      
-      Oleh karena itu, oli gardan motor harus memiliki tingkat kekentalan yang lebih tinggi atau lebih kental dibandingkan dengan oli mesin. Kekentalan yang tinggi pada oli gardan motor membantu dalam membentuk lapisan pelindung yang lebih tebal pada gigi-gigi gardan, sehingga mengurangi gesekan dan keausan yang berpotensi terjadi.</p>
-  
      
 <!-- kapan ganti oli -->
 <div class="container-fluid kapan ganti oli" >
   <div class="container  pt-4 " >
-    <h3 style=" margin-top: 30px; ">Kapan Ganti Oli</h3>
+    <h3 style=" margin-top: 0px; ">Kapan Ganti Oli</h3>
   </div>
 
  <!-- gambar samping -->    
- <div class="pt-3"><img src="6.jpg" class="col-md-4 float-md-end ms-md-4  " style="height: 300px; width: 250px;"/></div>
- <p  style="font-size: 16px; text-align: justify; margin-left: -1%;">Mengganti oli motor, termasuk oli motor matic, memang perlu dilakukan secara berkala agar mesin motor bisa bekerja dengan baik. Pasalnya, oli memiliki peran sebagai pelumas utama di dalam mesin dan kinerja serta daya tahannya dipengaruhi oleh panas dan kerak yang muncul akibat terjadinya pembakaran. Selain itu, oli juga berfungsi untuk menyebarkan panas ke seluruh bagian mesin. Jadi, anda tentu perlu mengganti oli motor di waktu yang tepat. Namun, beberapa pertanyaan pasti muncul di benak para pengguna motor. “Jadi, di berapa km ganti oli motor harus dilakukan?” atau “apa yang harus diikuti? Acuan km atau waktu pakai?” Artikel ini akan menjawab semua pertanyaan anda seputar mengganti oli motor.</p>
- </div>
-</div>
 
-<div class="container-fluid gambar-samping" style="margin-top: 0; ">
- <div class="container" >
-   <div class="pt-5  "><img src="7.jpg "   class="col-md-5 float-md-start  me-md-4" style="height: 300px; width: 250px;"/></div>
- <p style="font-size: 16px; text-align: justify;">Biasanya, oli mesin baru akan berwarna cokelat atau biru dengan konsistensi yang pekat, namun tidak berwarna hitam. Oli mesin akan berubah warna saat terkena panas dan kerak akibat pembakaran. Jika oli sudah berwarna hitam pekat, itu tandanya oli sudah terkontaminasi oleh zat-zat bekas pembakaran. Sebaiknya, anda harus cepat menggantinya karena daya lumas oli akan menurun jika terus dibiarkan dan mesin akan cepat aus. Kurangnya volume oli mesin
-  Oli sepeda motor berkapasitas 150cc biasanya bervolume di bawah 1 liter. Akan tetapi, volume ini akan berkurang tergantung seberapa intens pemakaian mesin. Jika volume oli terlihat kurang dari batas, segera periksa adanya kebocoran oli dan jangan lupa untuk segera mengganti oli mesin. Suhu mesin terasa tinggi
-  Kondisi fisik oli yang memburuk akan membuat daya hantar panasnya semakin berkurang. Inilah yang akan menyebabkan tidak meratanya penyebaran panas pada mesin. anda akan merasa ada hawa panas dari area mesin pada kaki anda.</p>
+ <div class="container-fluid gambar-samping" style="margin-top: -40px; ">
+  <div class="container" >
+    <div class="pt-5  "><img src="kapan ganti2.jpg"   class="col-md-5 float-md-start  me-md-4" style="height: 340px; width: 340px;"/></div>
+  <p style="font-size: 16px; text-align: justify;">Mengganti oli motor, termasuk oli motor matic, memang perlu dilakukan secara berkala agar mesin motor bisa bekerja dengan baik. Pasalnya, oli memiliki peran sebagai pelumas utama di dalam mesin dan kinerja serta daya tahannya dipengaruhi oleh panas dan kerak yang muncul akibat terjadinya pembakaran. Selain itu, oli juga berfungsi untuk menyebarkan panas ke seluruh bagian mesin. Jadi, anda tentu perlu mengganti oli motor di waktu yang tepat. Namun, beberapa pertanyaan pasti muncul di benak para pengguna motor. “Jadi, di berapa km ganti oli motor harus dilakukan?” atau “apa yang harus diikuti? Acuan km atau waktu pakai?” Artikel ini akan menjawab semua pertanyaan anda seputar mengganti oli motor.</p>
+  </div>
  </div>
-</div>
+
+
+ <div class="container-fluid gambar-samping" style="margin-top: 40px; ">
+  <div class="container" >
+    <div class="pt-5  "><img src="kapan ganti2.jpg"   class="col-md-5 float-md-end  me-md-4" style="height: 340px; width: 340px; padding-top: 120px;"/></div>
+  <p style="font-size: 16px; text-align: justify;  margin-top: 120px; margin-right: 400px;">Mengganti oli motor, termasuk oli motor matic, memang perlu dilakukan secara berkala agar mesin motor bisa bekerja dengan baik. Pasalnya, oli memiliki peran sebagai pelumas utama di dalam mesin dan kinerja serta daya tahannya dipengaruhi oleh panas dan kerak yang muncul akibat terjadinya pembakaran. Selain itu, oli juga berfungsi untuk menyebarkan panas ke seluruh bagian mesin. Jadi, anda tentu perlu mengganti oli motor di waktu yang tepat. Namun, beberapa pertanyaan pasti muncul di benak para pengguna motor. “Jadi, di berapa km ganti oli motor harus dilakukan?” atau “apa yang harus diikuti? Acuan km atau waktu pakai?” Artikel ini akan menjawab semua pertanyaan anda seputar mengganti oli motor.</p>
+  </div>
+ </div>
+<!-- <div class="container-fluid gambar-samping" style="margin-top: 0; ">
+ <div class="container" >
+   <div class="pt-6 float-right  "><img src="kapan ganti.jpg"   class="col-md-5 float-md-end  me-md-4 " style=" height: 300px; width: 400px;"/></div>
+ <p style="font-size: 16px; text-align: justify; margin-top: 150px; margin-right: 350px;"></p>
+ </div>
+</div> -->
 <!-- gambar samping -->
 </div>
 <!-- kapan harus ganti oli END-->
 
 <!-- promo -->
-    <div class="container-fluid promo" style="margin-top: 60px;">
+    <div class="container-fluid promo" style="margin-top: 30px;">
 <div class="container text-center">
   <h2 id="Promo"  >Promo</h2>
-  <div class="row " style="margin-top: 20px;">
-    <div class="col-md-4 ">
+  <div class="row pt-4" style="margin-top: 20px;">
+    <div class="col-md-2 ">
         <div class="card product-card ">
             <img src="promo1.jpg" class="card-img-top">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
@@ -193,37 +221,37 @@
     </div>
 
 
-    <div class="col-md-4 ">
+    <div class="col-md-2 ">
       <div class="card product-card ">
           <img src="promo2.jpg" class="card-img-top">
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
       </div>
   </div>
 
-  <div class="col-md-4 ">
+  <div class="col-md-2 ">
     <div class="card product-card ">
         <img src="promo3.jpg" class="card-img-top">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
     </div>
 </div>
 
-<div class="col-md-4 ">
-  <div class="card product-card " style="margin-top: 20px;">
-      <img src="promo4.jpg" class="card-img-top">
+<div class="col-md-2 ">
+  <div class="card product-card ">
+      <img src="promo2.jpg" class="card-img-top">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
   </div>
 </div>
 
-<div class="col-md-4 ">
-  <div class="card product-card " style="margin-top: 20px;">
-      <img src="promo5.jpg" class="card-img-top">
+<div class="col-md-2 ">
+  <div class="card product-card ">
+      <img src="promo2.jpg" class="card-img-top">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
   </div>
 </div>
 
-<div class="col-md-4 ">
-  <div class="card product-card " style="margin-top: 20px;">
-      <img src="promo6.jpg" class="card-img-top">
+<div class="col-md-2 ">
+  <div class="card product-card ">
+      <img src="promo2.jpg" class="card-img-top">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, deleniti?</p>
   </div>
 </div>
